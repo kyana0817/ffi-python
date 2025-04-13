@@ -1,0 +1,25 @@
+[build-system]
+requires = ["maturin>=1.8,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "ffi-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+[tool.maturin]
+module-name = "example._core"
+python-packages = ["example"]
+python-source = "src"
+
+[dependency-groups]
+dev = [
+    "maturin>=1.8.3",
+    "maturin[patchelf]>=1.8.3",
+]
