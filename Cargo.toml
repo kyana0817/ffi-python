@@ -7,6 +7,7 @@ edition = "2021"
 [lib]
 name = "_core"
 crate-type = ["cdylib"]
+path = "ffi/lib.rs"
 
 [dependencies]
 pyo3 = "0.24.0"

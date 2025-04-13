@@ -16,7 +16,7 @@ classifiers = [
 [tool.maturin]
 module-name = "example._core"
 python-packages = ["example"]
-python-source = "src"
+python-source = "ffi"
 
 [dependency-groups]
 dev = [

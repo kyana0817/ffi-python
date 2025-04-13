@@ -1,6 +1,4 @@
-from src import example
-
-
+from ffi import example
 
 def main():
     result = example.sum_as_string(1, 2)
