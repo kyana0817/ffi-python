@@ -25,7 +25,7 @@ uv sync
 To build the Rust code as a Python extension module, run the following command:
 
 ```bash
-maturin develop
+uv run maturin develop
 ```
 
 This will install the extension module in your local environment.
@@ -35,7 +35,7 @@ This will install the extension module in your local environment.
 Run `main.py` to see an example of calling a Rust function from Python:
 
 ```bash
-python main.py
+uv run main.py
 ```
 
 The output will be as follows:
