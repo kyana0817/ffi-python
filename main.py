@@ -1,8 +1,8 @@
-from ffi import example
+from ffi.example import manula_simple_struct, ManualSimple
 
 def main():
-    result = example.sum_as_string(1, 2)
-    print(result)
+    result = manula_simple_struct()
+    print(result.a)
 
 
 if __name__ == "__main__":

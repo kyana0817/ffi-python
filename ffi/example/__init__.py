@@ -1,1 +1,1 @@
-from example._core import *
+from example._core import * # type: ignore
